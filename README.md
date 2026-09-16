@@ -57,7 +57,7 @@ npm install
 npm start
 ```
 
-API: `http://localhost:3000`
+API: `http://localhost:3001`
 
 ### Terminal 2 - Angular
 
@@ -69,24 +69,16 @@ npm start
 
 Site: `http://localhost:4200`
 
-## Como enviar para o GitHub
-
-Execute `ENVIAR_PARA_GITHUB.bat`. O arquivo prepara o Git e envia o projeto para:
-
-`https://github.com/fellipefonseccaa/desafio-angular-fellipe-fonseca`
-
-Na primeira utilização, o GitHub poderá abrir o navegador para solicitar autorização.
-
 ## VIN para teste
 
 `2FRHDUYS2Y63NHD22454`
 
 ## Endpoints utilizados
 
-- `POST http://localhost:3000/login`
-- `GET http://localhost:3000/vehicle`
-- `POST http://localhost:3000/vehicleData`
+- `POST http://localhost:3001/login`
+- `GET http://localhost:3001/vehicles`
+- `POST http://localhost:3001/vehicleData`
 
-## Observação sobre o arquivo de suporte
+## API utilizada
 
-O ZIP fornecido contém o banco de dados e o `server.js` original, porém as pastas internas da API vieram sem os arquivos necessários para o servidor original funcionar. Por isso, a pasta `backend` deste projeto contém uma API Express simples que usa o mesmo banco `data2.db` e disponibiliza os endpoints exigidos pelo desafio.
+O backend foi adaptado a partir da API Sprint 7 disponibilizada em `JMarcelloDias/Api-Sprint7`. A API Express fornece login, lista de veículos, imagens e consulta por VIN na porta 3001.

@@ -1,6 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
+set NG_CLI_ANALYTICS=false
 
 echo =========================================
 echo       FORD DASHBOARD - DESAFIO 7
@@ -16,12 +17,12 @@ if errorlevel 1 (
 )
 
 echo Abrindo a API em uma nova janela...
-start "API FORD" cmd /k "cd /d ^"%~dp0backend^" && if not exist node_modules npm install && npm start"
+start "API FORD" /D "%~dp0backend" cmd /k "if not exist node_modules npm install && npm start"
 
 timeout /t 3 /nobreak >nul
 
 echo Abrindo o Angular em uma nova janela...
-start "ANGULAR FORD" cmd /k "cd /d ^"%~dp0frontend^" && if not exist node_modules npm install && npm start"
+start "ANGULAR FORD" /D "%~dp0frontend" cmd /k "if not exist node_modules npm install && npm start"
 
 echo.
 echo Quando terminar de carregar, abra:
