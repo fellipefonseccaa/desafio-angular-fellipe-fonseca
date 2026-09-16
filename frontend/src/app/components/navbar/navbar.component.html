@@ -1,0 +1,11 @@
+<nav class="barra">
+  <button class="menu-btn" (click)="menuAberto = !menuAberto" aria-label="Abrir menu">☰</button>
+  <img src="assets/img/ford.png" alt="Ford" class="logo">
+</nav>
+
+<div class="menu-lateral" [class.aberto]="menuAberto">
+  <a routerLink="/home" (click)="menuAberto = false">Home</a>
+  <a routerLink="/dashboard" (click)="menuAberto = false">Dashboard</a>
+  <button (click)="logout()">Logout</button>
+</div>
+<div class="sombra" *ngIf="menuAberto" (click)="menuAberto = false"></div>

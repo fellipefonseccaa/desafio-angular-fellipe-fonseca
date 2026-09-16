@@ -69,8 +69,6 @@ npm start
 
 Site: `http://localhost:4200`
 
-<<<<<<< HEAD
-=======
 ## Como enviar para o GitHub
 
 Execute `ENVIAR_PARA_GITHUB.bat`. O arquivo prepara o Git e envia o projeto para:
@@ -79,7 +77,6 @@ Execute `ENVIAR_PARA_GITHUB.bat`. O arquivo prepara o Git e envia o projeto para
 
 Na primeira utilização, o GitHub poderá abrir o navegador para solicitar autorização.
 
->>>>>>> 22a18f4 (Adiciona projeto Ford em Angular)
 ## VIN para teste
 
 `2FRHDUYS2Y63NHD22454`

@@ -1,0 +1,13 @@
+.login-page { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; background: white; }
+.lado-carro { display: flex; align-items: center; justify-content: center; padding: 40px; }
+.lado-carro img { width: min(88%, 620px); object-fit: contain; }
+.lado-form { display: flex; align-items: center; justify-content: center; border-left: 1px solid #f0f0f0; padding: 32px; }
+.caixa-login { width: min(410px, 100%); }
+.logo-login { width: 125px; display: block; margin: 0 auto 55px; }
+h2 { color: #2e9b61; text-align: center; font-size: 24px; margin-bottom: 28px; font-weight: 600; }
+.form-label { font-size: 13px; color: #4e4e4e; }
+.form-control { height: 42px; }
+.form-check { text-align: center; font-size: 13px; }
+.form-check-input { float: none; margin-right: 6px; }
+.erro { font-size: 13px; color: #b02a37; margin: 7px 0; text-align: center; }
+@media (max-width: 780px) { .login-page { grid-template-columns: 1fr; } .lado-carro { display:none; } .lado-form { border-left: 0; } }
